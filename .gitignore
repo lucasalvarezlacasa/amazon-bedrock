@@ -1,0 +1,10 @@
+*.pyc
+.cache
+.idea/
+venv/
+**/__pycache__/**
+**~
+/.pytest_cache/**
+/docker-config/**
+.vscode/
+**.egg-info/
