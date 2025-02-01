@@ -1,0 +1,33 @@
+[build-system]
+requires = [
+    "setuptools>=69.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project]
+name = "amazon-bedrock"
+version = "0.0.1"
+description = "Amazon bedrock PoC"
+authors = [
+    { name = "Lucas Alvarez Lacasa", email = "lucasalvarezlacasa@gmail.com" },
+]
+keywords = ["AI", "LLMs", "Bedrock"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+[project.urls]
+Homepage = "https://github.com/lucasalvarezlacasa/amazon-bedrock"
+Documentation = "https://github.com/lucasalvarezlacasa/amazon-bedrock/README.md"
+Repository = "https://github.com/lucasalvarezlacasa/amazon-bedrock"
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["dev-requirements.txt"] }
