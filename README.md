@@ -50,7 +50,7 @@ for this to work.
            {
                "Effect": "Allow",
                "Action": "sts:AssumeRole",
-               "Resource": "arn:aws:iam::ACCOUNT_ID:role/BedrockServices"
+               "Resource": "arn:aws:iam::AWS_ACCOUNT_ID:role/BedrockServices"
            }
        ]
    }
